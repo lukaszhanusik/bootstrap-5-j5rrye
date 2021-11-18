@@ -1,0 +1,22 @@
+request='
+{
+  "to": "",
+  "transactional_message_id": "2",
+  "message_data": {
+    "customer": {
+      "firstname": "",
+      "lastname": "",
+      "email": ""
+    }
+  },
+  "identifiers": {
+    "id": ""
+  },
+  "subject": ""
+}
+'
+
+echo $request | curl -v https://api-eu.customer.io/v1/send/email \
+-H 'Content-Type: application/json' \
+-H 'Authorization: Bearer 81f65eb769eebbdb7e8d3fb95139e4d9' \
+-d @-
