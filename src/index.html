@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js"></script>
+    <script>
+      !(function (t, e) {
+        var o, n, p, r;
+        e.__SV ||
+          ((window.posthog = e),
+          (e._i = []),
+          (e.init = function (i, s, a) {
+            function g(t, e) {
+              var o = e.split('.');
+              2 == o.length && ((t = t[o[0]]), (e = o[1])),
+                (t[e] = function () {
+                  t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+                });
+            }
+            ((p = t.createElement('script')).type = 'text/javascript'),
+              (p.async = !0),
+              (p.src = s.api_host + '/static/array.js'),
+              (r = t.getElementsByTagName('script')[0]).parentNode.insertBefore(
+                p,
+                r
+              );
+            var u = e;
+            for (
+              void 0 !== a ? (u = e[a] = []) : (a = 'posthog'),
+                u.people = u.people || [],
+                u.toString = function (t) {
+                  var e = 'posthog';
+                  return (
+                    'posthog' !== a && (e += '.' + a), t || (e += ' (stub)'), e
+                  );
+                },
+                u.people.toString = function () {
+                  return u.toString(1) + '.people (stub)';
+                },
+                o =
+                  'capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags'.split(
+                    ' '
+                  ),
+                n = 0;
+              n < o.length;
+              n++
+            )
+              g(u, o[n]);
+            e._i.push([i, s, a]);
+          }),
+          (e.__SV = 1));
+      })(document, window.posthog || []);
+      posthog.init('phc_DycwiKhS37AlD8RaqU3flYnmleXz8UrWiUcx23viBw7', {
+        api_host: 'https://app.posthog.com',
+      });
+    </script>
+  </head>
+
+  <body class="p-4">
+    <button class="btn btn-primary">Primary button</button>
+
+    <button class="btn btn-secondary">Secondary button</button>
+  </body>
+  <head>
+    <link
+      rel="shortcut icon"
+      href="https://site.trustly.net/site/binaries/content/assets/logo/favicon.ico"
+    />
+    <link rel="stylesheet" href="https://trustly.com/shared/css/style.css" />
+    <link rel="stylesheet" href="/contact-support/style.css" />
+  </head>
+  <body>
+    <div class="wrapper-top-nav">
+      <nav class="navbar">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="nav-logo">
+                <a href="https://trustly.net/">
+                  <img
+                    src="https://site.trustly.net/site/binaries/content/assets/logo/regular_horizontal_trustly_green_logo.svg"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="contactSupport">
+      <div class="container contactSupport__wrapper">
+        <div class="contactSupport__successMessage hidden">
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-xs-10 col-xs-offset-1 contactSupport__headerThankYou"
+              >
+                <h2>Thank you for contacting us!</h2>
+                <p class="thank-you--default">
+                  We will shortly get back to you.
+                </p>
+                <div class="contactSupport__thank-you-box">
+                  <img
+                    src="https://trustly.com/shared/img/mail/mail.png"
+                    class="send-complete-icon"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contactSupport__content">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-10 col-xs-offset-1 contactSupport__header">
+                <h1>Contact Support</h1>
+                <p>
+                  Thank you for contacting Trustly! In order to provide you with
+                  the quickest and most reliable support, we will respond to
+                  your question in English. However, please let us know if you
+                  would like to receive a translation of our response by
+                  requesting so in the message box below.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-6 col-xs-offset-3">
+                <form
+                  class="contactSupport__form"
+                  enctype="multipart/form-data"
+                >
+                  <div class="input-block">
+                    <label for="contactSupport-firstName">
+                      Your first name
+                      <span class="contactSupport__labelRequired"
+                        >(required)</span
+                      >
+                    </label>
+                    <div class="input-field">
+                      <input
+                        id="contactSupport-firstName"
+                        class="contactSupport__input"
+                        name="firstName"
+                        type="text"
+                        maxlength="100"
+                        class=""
+                        required=""
+                      />
+                      <div class="contactSupport__inputError"></div>
+                    </div>
+                  </div>
+                  <div class="input-block">
+                    <label for="contactSupport-lastName">
+                      Your last name
+                      <span class="contactSupport__labelRequired"
+                        >(required)</span
+                      >
+                    </label>
+                    <div>
+                      <input
+                        id="contactSupport-lastName"
+                        class="contactSupport__input"
+                        name="lastName"
+                        type="text"
+                        maxlength="100"
+                        required=""
+                      />
+                      <div class="contactSupport__inputError"></div>
+                    </div>
+                  </div>
+                  <div class="input-block">
+                    <label for="contactSupport-senderEmail">
+                      Your email address
+                      <span class="contactSupport__labelRequired"
+                        >(required)</span
+                      >
+                    </label>
+                    <div>
+                      <input
+                        id="contactSupport-senderEmail"
+                        class="contactSupport__input"
+                        name="senderEmail"
+                        type="email"
+                        maxlength="100"
+                        required=""
+                      />
+                      <div class="contactSupport__inputError"></div>
+                    </div>
+                  </div>
+                  <div class="input-block">
+                    <label for="contactSupport-orderId">
+                      Trustly Order ID of your transaction
+                    </label>
+                    <div>
+                      <input
+                        id="contactSupport-orderId"
+                        class="contactSupport__input"
+                        name="orderId"
+                        type="number"
+                        pattern="\d{10,10}"
+                      />
+                      <div class="contactSupport__inputError"></div>
+                    </div>
+                  </div>
+                  <div class="input-block">
+                    <label for="contactSupport-subject">
+                      Subject
+                      <span class="contactSupport__labelRequired"
+                        >(required)</span
+                      >
+                    </label>
+                    <div>
+                      <input
+                        id="contactSupport-subject"
+                        class="contactSupport__input"
+                        name="subject"
+                        type="text"
+                        maxlength="100"
+                        required=""
+                      />
+                      <div class="contactSupport__inputError"></div>
+                    </div>
+                  </div>
+                  <div class="input-block">
+                    <label for="contactSupport-message">
+                      Message
+                      <span class="contactSupport__labelRequired"
+                        >(required)</span
+                      >
+                    </label>
+                    <div>
+                      <textarea
+                        id="contactSupport-message"
+                        class="contactSupport__input contactSupport__textArea"
+                        name="message"
+                        required=""
+                      ></textarea>
+                      <div class="contactSupport__inputError"></div>
+                    </div>
+                  </div>
+                  <div class="input-block">
+                    <p>
+                      <strong>
+                        If you would like us to investigate a Trustly
+                        transaction please add a proof of payment, accepted
+                        formats are pdf, jpeg and png.
+                      </strong>
+                    </p>
+                    <label for="contactSupport-caseAttachment"
+                      >Proof of Payment</label
+                    >
+                    <div>
+                      <input
+                        id="contactSupport-caseAttachment"
+                        class="contactSupport__input"
+                        name="caseAttachment"
+                        type="file"
+                        size="84"
+                      />
+                      <div class="contactSupport__inputError"></div>
+                    </div>
+                  </div>
+                  <br />
+                  <div class="input-block">
+                    <a
+                      href="https://www.trustly.net/about-us/privacy-policy"
+                      target="_blank"
+                    >
+                      By submitting this form, you accept that Trustly will
+                      process your personal data provided herein, in accordance
+                      with our privacy information sheet available here to "My
+                      personal data will be processed in accordance with
+                      Trustly's Privacy Policy".
+                    </a>
+                  </div>
+                  <div class="input-block">
+                    <input
+                      id="contactSupport-submit"
+                      class="contactSupport__submit btn btn-block btn-green"
+                      type="submit"
+                      name="Submit"
+                      value="Send email"
+                    />
+                    <div class="contactSupport__inputError"></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper-legal">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 legal-copy">
+            <div class="legal-copy-wrapper">
+              <div class="social-links">
+                <a
+                  href="https://twitter.com/Trustly"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><span class="icon-twitter"></span
+                ></a>
+                <a
+                  href="https://www.linkedin.com/company/trustly"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><span class="icon-linkedin"></span
+                ></a>
+                <a
+                  href="https://www.facebook.com/trustly"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><span class="icon-facebook"></span
+                ></a>
+                <a
+                  href="https://www.youtube.com/user/TrustlySE"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><span class="icon-youtube"></span
+                ></a>
+                <a
+                  href="https://www.instagram.com/trustly"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><span class="icon-instagram"></span
+                ></a>
+              </div>
+
+              <p class="legal-copy-content js-plain-text">
+                Trustly Group AB (corporate identity number 556754-8655) is an
+                authorized Swedish payment institution under the supervision of
+                the Swedish Financial Supervisory Authority
+                (Finansinspektionen). The company conducts payment services in
+                accordance with the Payment Services Act (2010:751) and can
+                provide cross-border payment services within the EU/EEA.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $('form').on('submit', function (e) {
+          e.preventDefault();
+          $('.contactSupport__inputError').text('');
+          $('#contactSupport-submit').attr('disabled', true);
+          $.ajax({
+            type: 'post',
+            url: '/api/contact-support',
+            data: new FormData($('form')[0]),
+            enctype: 'multipart/form-data',
+            cache: false,
+            contentType: false,
+            processData: false,
+            success: function () {
+              $('.contactSupport__successMessage').removeClass('hidden');
+              $('.contactSupport__content').addClass('hidden');
+              $('.send-complete-icon').addClass('active');
+              $('#contactSupport-submit').attr('disabled', false);
+            },
+            error: function (errors) {
+              if (errors.status >= 400 && errors.status < 500) {
+                const inputFieldErrors = JSON.parse(errors.responseJSON.errors);
+                inputFieldErrors.map((inputFieldError) => {
+                  $(`#contactSupport-${inputFieldError.field}`)
+                    .next()
+                    .text(inputFieldError.error);
+                });
+              }
+
+              $('#contactSupport-submit').attr('disabled', false);
+              $('#contactSupport-submit')
+                .next()
+                .text(
+                  'There seems to be some missing or invalid input, which we require in order to process you request. Please check the error messages above.'
+                );
+            },
+          });
+        });
+      });
+    </script>
+    <script
+      defer="defer"
+      src="https://trustly.com/shared/js/plugins.js"
+    ></script>
+    <script defer="defer" src="https://trustly.com/shared/js/main.js"></script>
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        'script',
+        'https://www.google-analytics.com/analytics.js',
+        'ga'
+      );
+      ga('create', 'UA-48143689-1', 'trustly.com');
+      ga('require', 'linkid', 'linkid.js');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
