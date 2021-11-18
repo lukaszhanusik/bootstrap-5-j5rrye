@@ -56,14 +56,20 @@
         api_host: 'https://app.posthog.com',
       });
     </script>
-  </head>
-
-  <body class="p-4">
-    <button class="btn btn-primary">Primary button</button>
-
-    <button class="btn btn-secondary">Secondary button</button>
-  </body>
-  <head>
+    <script type="text/javascript">
+      (function() {
+        var t = document.createElement('script'),
+            s = document.getElementsByTagName('script')[0];
+        t.async = true;
+        t.id    = 'cio-forms-handler';
+        t.setAttribute('data-site-id', '76b5a5a3cd503d4aa113');
+        t.setAttribute('data-base-url', 'https://eu.customerioforms.com');
+    
+        t.src = 'https://eu.customerioforms.com/assets/forms.js';
+    
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>  
     <link
       rel="shortcut icon"
       href="https://site.trustly.net/site/binaries/content/assets/logo/favicon.ico"
@@ -424,5 +430,7 @@
       ga('require', 'linkid', 'linkid.js');
       ga('send', 'pageview');
     </script>
+      <button class="btn btn-primary">Primary button</button>
+      <button class="btn btn-secondary">Secondary button</button>
   </body>
 </html>
